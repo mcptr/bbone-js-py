@@ -1,0 +1,46 @@
+.animate-flash {
+  -moz-animation: flash 0.3s ease-out;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation: flash 0.3s ease-out;
+  -webkit-animation-iteration-count: 1;
+  -ms-animation: flash 0.3s ease-out;
+  -ms-animation-iteration-count: 1; }
+
+  @-webkit-keyframes flash {
+}
+    @-webkit-keyframes flash {
+      0% {
+        opacity: 0;   }
+        40% {
+          opacity: 1;   }
+          70% {
+            opacity: 0;   }
+            100% {
+              opacity: 1;   }
+}
+
+@-moz-keyframes flash {
+}
+  @-moz-keyframes flash {
+    0% {
+      opacity: 0;   }
+      40% {
+        opacity: 1;   }
+        70% {
+          opacity: 0;   }
+          100% {
+            opacity: 1;   }
+}
+
+@-ms-keyframes flash {
+}
+  @-ms-keyframes flash {
+    0% {
+      opacity: 0;   }
+      40% {
+        opacity: 1;   }
+        70% {
+          opacity: 0;   }
+          100% {
+            opacity: 1;   }
+}

@@ -1,0 +1,103 @@
+<div class="posts comments grid-striped">
+  <hr/>
+  {{~it.data : comment}}
+  <div class="{{!(!comment.lvl ? 'thread' : '')}}">
+    <div class="indent-right-{{!(comment.lvl > 5 ? 5 : comment.lvl)}}">
+      <div class="comment" id="comment-{{!comment.id}}" data-id="{{!comment.id}}">
+	<div class="row">
+	  <div class="col-xs-1 user-avatar">
+	    {{?comment.user_avatar}}
+	    <img src="{{!comment.user_avatar}}" alt=""></img>
+	    {{??}}
+	    <i class="fa fa-user"></i>
+	    {{?}}
+	  </div>
+	  <div class="col-xs-11">
+	    <div class="meta clearfix">
+	      <div class="pull-left">
+		<ul class="list-inline list-unstyled">
+		  <li>
+		    <strong>
+		      <a href="{{!it.helpers.route(':users:user', {id: comment.author})}}">
+			{{? !comment.user_active }}
+			    <del>{{!comment.author}}</del>
+			{{??}}
+			    {{!comment.author}}
+			{{?}}
+		      </a>
+		    </strong>
+		  </li>
+		  <li>
+		    ({{!it.helpers.datetime.unixToUTCDateTime(comment.ctime)}})
+		  </li>
+		  <li>
+		    
+		    <a href="#comment-{{!comment.id}}" data-bypass="">
+		      #{{!comment.id}}
+		    </a>
+		  </li>
+		</ul>
+	      </div>
+	      <div class="pull-right">
+		<span><a href="#" class="vote plus fa fa-plus-circle" data-id="{{!comment.id}}"> </a> </span>
+		<span><a href="#" class="vote minus fa fa-minus-circle" data-id="{{!comment.id}}"> </a> </span>
+		<span class="score"><strong>{{!(comment.score || "0")}}</strong></span>
+	      </div>
+	    </div>
+	    <div class="content">
+	      {{? comment.deleted }}
+                <span class="comment-deleted">
+		  Comment removed
+		  {{? comment.deleted_by.length }}
+		    by {{!comment.deleted_by}}
+		  {{?}}
+		</span>
+	      {{??}}
+		<span class="text">{{=it.helpers.markup.render(comment.content)}}</span>
+	      {{?}}
+	    </div>
+	    <div class="actions">
+ 	      {{? it.user.id }}
+	      <ul class="list-inline list-unstyled">
+ 		{{? !comment.deleted }}
+		<li>
+		  <a href="#" class="link-reply">
+		    <i class="fa fa-share-square"></i> Reply
+		  </a>
+		</li>
+		{{?}}
+		<!-- <li> -->
+		<!--   <a href="#"> -->
+		<!--     <i class="fa fa-flag"></i> Report -->
+		<!--   </a> -->
+		<!-- </li> -->
+
+		{{?it.user.id == comment.user_id && !comment.deleted}}
+		<li>
+		  <a href="#" class="link-edit">
+		    <i class="fa fa-pencil-square"></i> Edit
+		  </a>
+		</li>
+
+		<li>
+		  <a href="#" class="link-remove">
+		    <i class="fa fa-trash"></i> Delete
+		  </a>
+		</li>
+		{{?}}
+
+		<!-- <li> -->
+		<!--   <a href="#"> -->
+		<!--     <i class="fa fa-star"></i> Save -->
+		<!--   </a> -->
+		<!-- </li> -->
+	      </ul>
+	      {{?}}
+	    </div>
+	  </div>
+	</div>
+      </div>
+    </div>
+    {{~}}
+  </div>
+</div>

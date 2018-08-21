@@ -1,0 +1,54 @@
+.navbar-default .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+  background: #2f2f2f; }
+  .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #5e5e5e;
+    background-color: #eee; }
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #0099ff;
+  font-weight: bold; }
+.navbar-default .navbar-header {
+  color: #fff; }
+  .navbar-default .navbar-header button.navbar-toggle {
+    color: #fff;
+    background: #2f2f2f; }
+    .navbar-default .navbar-header button.navbar-toggle:hover,
+    .navbar-default .navbar-header button.navbar-toggle:focus,
+    .navbar-default .navbar-header button.navbar-toggle.active,
+    .navbar-default .navbar-header button.navbar-toggle.active:hover {
+      background: #f6f6f6;
+      color: #000; }
+.navbar-default .navbar-toggle:active, .navbar-default .navbar-toggle:hover {
+  background-color: #fff; }
+  .navbar-default .navbar-toggle:focus {
+    background-color: #eee; }
+.navbar-default a {
+  font-weight: bold; }
+  .navbar-default a:hover {
+    background: #fff;
+    color: #000;
+    -webkit-transition: background 0.05s ease-in;
+    -moz-transition: background 0.05s ease-in;
+    -o-transition: background 0.05s ease-in; }
+.navbar-default .navbar-right li {
+  border-left: 1px solid #666; }
+  .navbar-default .navbar-right i {
+    font-size: 1.3em; }
+    .navbar-default .navbar-right .profile-link a,
+    .navbar-default .navbar-right .profile-link:focus a,
+    .navbar-default .navbar-right .profile-link .active a {
+      color: #fff; }
+.navbar-default .navbar-right a, .navbar-default .navbar-right a:focus,
+.navbar-default .navbar-right a .active {
+  color: #fff; }
+  .navbar-default .navbar-right a .text, .navbar-default .navbar-right a:focus .text,
+  .navbar-default .navbar-right a .active .text {
+    display: none; }
+@media (max-width: 768px) {
+  .navbar-default .navbar-right a .text {
+    display: inline;   }
+}

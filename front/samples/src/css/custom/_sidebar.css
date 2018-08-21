@@ -1,0 +1,83 @@
+.layout-sidebar.toggled .sidebar {
+  width: 25px; }
+  .layout-sidebar.toggled .sidebar .menu {
+    display: none; }
+    .layout-sidebar.toggled .sidebar .controls .link-hide {
+      display: none; }
+      .layout-sidebar.toggled .sidebar .controls .link-show {
+        display: block; }
+.layout-sidebar.toggled .main-view {
+  width: 100%;
+  margin-right: 10px;
+  margin-left: 0; }
+.layout-sidebar .sidebar {
+  width: 250px;
+  padding-top: 10px;
+  position: fixed;
+  left: 0;
+  background: #fafafa;
+  height: 100%;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-right: 2px solid #eee; }
+  .layout-sidebar .sidebar .controls {
+    text-align: right;
+    padding: 0px 5px; }
+    .layout-sidebar .sidebar .controls a {
+      color: #aaa;
+      font-weight: normal;
+      font-size: 1em; }
+      .layout-sidebar .sidebar .controls a:hover {
+        color: #0099ff; }
+    .layout-sidebar .sidebar .controls .link-hide {
+      display: block; }
+      .layout-sidebar .sidebar .controls .link-show {
+        display: none; }
+  .layout-sidebar .sidebar .menu {
+    padding-left: 10px; }
+    .layout-sidebar .sidebar li.group {
+      margin-top: 10px; }
+      .layout-sidebar .sidebar li.group .header {
+        color: #666;
+        font-weight: bold;
+        padding: 0px 5px; }
+    .layout-sidebar .sidebar li .items {
+      padding-left: 10px; }
+      .layout-sidebar .sidebar li .items li a {
+        color: #0099ff; }
+.layout-sidebar .main-view {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  margin-right: 10px;
+  margin-left: 250px;
+  padding: 0px; }
+
+@media (max-width:768px) {
+  .layout-sidebar.toggled .sidebar {
+    width: 250px;   }
+    .layout-sidebar.toggled .sidebar .menu {
+      display: block;   }
+      .layout-sidebar.toggled .sidebar .controls .link-hide {
+        display: block;   }
+        .layout-sidebar.toggled .sidebar .controls .link-show {
+          display: none;   }
+  .layout-sidebar.toggled .main-view {
+    margin-left: 250px;
+    padding: 0px;
+    margin-right: 10px;   }
+  .layout-sidebar .sidebar {
+    width: 25px;   }
+    .layout-sidebar .sidebar .menu {
+      display: none;   }
+      .layout-sidebar .sidebar .controls .link-hide {
+        display: none;   }
+        .layout-sidebar .sidebar .controls .link-show {
+          display: block;   }
+  .layout-sidebar .main-view {
+    margin-left: 30px;
+    margin-right: 10px;   }
+}

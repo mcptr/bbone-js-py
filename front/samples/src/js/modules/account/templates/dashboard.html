@@ -1,0 +1,20 @@
+<div clsas="account dashboard">
+  <div class="login-info list-unstyled">
+    {{? it.user.get("last_success") && false }}
+    Last successful login: {{!it.helpers.datetime.unixToUTCDateTime(it.user.get("last_success"))}}
+    {{?}}
+
+    {{? it.user.get("failures")}}
+    <span class="warning">
+      <i class="fa fa-warning"></i>
+      <strong>
+	<a href="#">
+	  Failed login attempts: {{!it.user.get("failures")}} 
+	  (Last: {{!it.helpers.datetime.unixToUTCDateTime(it.user.get("last_failure"))}})
+	  &raquo;
+	</a>
+      </strong>
+    </span>
+    {{?}}
+  </div>
+</div>

@@ -1,0 +1,101 @@
+body {
+  position: relative; }
+
+  .grid-striped .row:nth-of-type(odd) {
+    background: #fff; }
+
+    .grid-striped .row:nth-of-type(even) {
+      background: #f7f7f7; }
+
+      .grid-rows-spaced .row {
+        margin: auto;
+        margin-bottom: 15px; }
+
+.vcenter {
+  display: block;
+  vertical-align: middle; }
+
+  .init-error {
+    padding: 10px; }
+    .init-error .message {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: darkred; }
+      .init-error .errorId {
+        font-size: 0.9em;
+        color: #777; }
+        .init-error .traceback {
+          font-size: 0.8em;
+          color: #777; }
+
+.load-error {
+  color: darkred;
+  font-weight: bold; }
+
+  .indent-right-1 {
+    padding-left: 30px; }
+
+    .indent-right-2 {
+      padding-left: 60px; }
+
+      .indent-right-3 {
+        padding-left: 90px; }
+
+        .indent-right-4 {
+          padding-left: 120px; }
+
+          .indent-right-5 {
+            padding-left: 150px; }
+
+            .indent-right-6 {
+              padding-left: 180px; }
+
+              .indent-right-7 {
+                padding-left: 210px; }
+
+                .indent-right-8 {
+                  padding-left: 240px; }
+
+                  .indent-right-9 {
+                    padding-left: 270px; }
+
+                    .indent-right-10 {
+                      padding-left: 300px; }
+
+                      .warning {
+                        color: #ff6a00; }
+                        .warning a {
+                          color: #ff6a00;
+                          font-weight: bold; }
+
+.error .message {
+  color: darkred;
+  font-weight: bold; }
+  .error .traceback {
+    font-size: 0.85em; }
+    .error .hint {
+      color: #666; }
+      .error.big .message {
+        font-size: 1.5em; }
+
+.success .message {
+  color: #000;
+  font-weight: bold; }
+  .success.big .message {
+    font-size: 1.5em; }
+
+.api-error {
+  color: darkred;
+  padding: 10px 0; }
+
+  .error-code-404 {
+    font-size: 1.5em; }
+
+    .no-border {
+      border: 0; }
+
+      .full-background {
+        background: #fff; }
+
+        .info {
+          color: #aaa; }

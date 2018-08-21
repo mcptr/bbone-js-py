@@ -1,0 +1,25 @@
+#main-content {
+    margin-top: 50px;
+
+    .main-view,
+    .side-panel {
+	padding-top: 20px;
+    }
+}
+
+.container {
+    width: 90%;
+}
+
+.layout-reversed {
+    display: flex;
+    flex: 1;
+
+    .main-panel {
+	order: 2;
+    }
+
+    .side-panel {
+	order: 1;
+    }
+}

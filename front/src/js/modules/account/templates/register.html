@@ -1,0 +1,74 @@
+<div class="account-form">
+  <div class="row">
+    <div class="col-md-6">
+      <h3>Sign up</h3>
+      <a href="{{!it.helpers.route(':account:login')}}">Already have an account?</a>
+      <form name="registration-form" class="registration-form" method="post">
+	<input type="hidden" name="social_uid"/>
+	<input type="hidden" name="social_provider"/>
+	<hr/>
+	<div class="form-group {{?it.data.hasErrors('username')}}has-error{{?}}">
+	  <input type="text" name="username" id="username" tabindex="1" class="form-control"
+		 placeholder="Username" value="{{!it.data.getValue('username')}}"/>
+	  <ul class="list-unstyled">
+	    {{~it.data.getErrors("username") : err : idx}}<li>{{!err}}</li>{{~}}
+	  </ul>
+	</div>
+	<div class="form-group {{?it.data.hasErrors('ident')}}has-error{{?}}">
+	  <input type="email" name="ident" id="ident" tabindex="1" class="form-control"
+		 placeholder="Email" value="{{!it.data.getValue('ident')}}"/>
+	  <ul class="list-unstyled">
+	    {{~it.data.getErrors("ident") : err : idx}}<li>{{!err}}</li>{{~}}
+	  </ul>
+	</div>
+	<div class="form-group {{?it.data.hasErrors('password')}}has-error{{?}}">
+	  <input type="password" name="password" id="password" tabindex="2" class="form-control"
+		 placeholder="Password" value="{{!it.data.getValue('password')}}"/>
+	  <ul class="list-unstyled">
+	    {{~it.data.getErrors("password") : err : idx}}<li>{{!err}}</li>{{~}}
+	  </ul>
+	</div>
+	<div class="form-group">
+	  <button href="#" tabindex="4" class="btn btn-primary" type="submit">Continue</button>
+	</div>
+	<div class="api-error">{{!it.data.getApiError()}}</div>
+      </form>
+      <hr/>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="list-inline">
+	<li>
+	  <a class="btn btn-block btn-social btn-sm btn-facebook" id="fb-login-button">
+	    <span class="fa fa-facebook"></span>
+	    Facebook
+	  </a>
+	</li>
+	<!-- <li> -->
+	<!--   <a class="btn btn-block btn-social btn-sm btn-twitter" id="twitter-login-button"> -->
+	<!--     <span class="fa fa-twitter"></span> -->
+	<!--     Twitter -->
+	<!--   </a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+	<!--   <a class="btn btn-block btn-social btn-sm btn-google" id="google-login-button"> -->
+	<!--     <span class="fa fa-google"></span> -->
+	<!--     Google+ -->
+	<!--   </a> -->
+	<!-- </li> -->
+	<!-- <li> -->
+	<!--   <a class="btn btn-block btn-social btn-sm btn-openid" id="openid-login-button"> -->
+	<!--     <span class="fa fa-openid"></span> -->
+	<!--     OpenID -->
+	<!--   </a> -->
+	<!-- </li> -->
+      </ul>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.account-menu {
+  width: 250px;
+  position: fixed;
+  left: 0;
+  background: red; }
+  .account-menu li.group {
+    margin-top: 10px; }
+    .account-menu li.group .header {
+      background: #f6f6f6;
+      font-weight: bold;
+      padding: 0px 5px; }
+  .account-menu li .items {
+    padding-left: 10px; }
+    .account-menu li .items li {
+      border-bottom: 1px solid #eee; }
+
+@media (max-width:768px) {
+  .account-menu {
+    width: 0;
+    left: 0;   }
+    .account-menu .menu {
+      display: none;   }
+}

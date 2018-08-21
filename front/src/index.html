@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Front</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- <script src="https://connect.facebook.net/en_US/sdk.js"></script> -->
+    <!-- <script> -->
+    <!--   var fb_app_id = '1687408468146199'; -->
+    <!--   window.fbAsyncInit = function() { -->
+    <!--       FB.init({ -->
+    <!--           appId: fb_app_id, -->
+    <!--           xfbml: false, -->
+    <!--           oauth: true, -->
+    <!--           cookie: true, -->
+    <!--           status: true, -->
+    <!--           version: 'v2.5', -->
+    <!--           frictionlessRequests: true, -->
+    <!--       }); -->
+    <!--   }; -->
+
+    <!-- </script> -->
+  </head>
+  <body>
+    <div id="fb-root"></div>
+
+    <div id="navbar-top"></div>
+
+    <div class="container" id="main-content">
+      <div class="row layout layout-sidebar hidden">
+	<div class="sidebar">
+	  <div class="controls">
+	    <a href="#" class="control link-hide">
+	      <i class="fa fa-remove"></i>
+	    </a>
+	    <a href="#" class="control link-show">
+	      <i class="fa fa-toggle-right"></i>
+	    </a>
+	  </div>
+	  <div class="content"></div>
+	</div>
+	<div class="main-view"></div>
+      </div>
+      <div class="row layout layout-full hidden">
+	<div class="main-view"></div>
+      </div>
+      <div class="row layout layout-left hidden">
+	<div class="col-lg-2 col-md-2 col-xs-2">
+	  <div class="side-panel layout-item">
+	  </div>
+	</div>
+	<div class="col-lg-10 col-md-10 col-xs-10 main-panel">
+	  <div class="main-view layout-item"></div>
+	</div>
+      </div>
+      <div class="row layout layout-right layout-active">
+	<div class="col-lg-8 col-md-8 col-sm-12 cols-xs-12 main-panel">
+	  <div class="main-view layout-item"></div>
+	</div>
+	<div class="col-lg-4 col-md-4 hidden-sm hidden-xs">
+	  <div class="side-panel layout-item">
+	  </div>
+	</div>
+      </div>
+    </div>
+
+    <div class="hidden" id="forms"></div>
+
+    <script data-main="/js/main" src="/vendor/requirejs/require.js"></script>
+  </body>
+</html>

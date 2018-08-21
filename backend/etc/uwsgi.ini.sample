@@ -1,0 +1,12 @@
+[uwsgi]
+socket = 127.0.0.1:8123
+chdir  = 
+module = main:app
+master = true
+threads = 10
+enable-threads = 1
+processes = 1
+reload-mercy = 3
+worker-reload-mercy = 1
+stats = 127.0.0.1:8124
+py-autoreload = 1

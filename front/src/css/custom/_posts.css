@@ -1,0 +1,146 @@
+.posts {
+  font-size: 0.95em;
+  text-align: justify; }
+  .posts a {
+    text-decoration: none; }
+    .posts a.plus {
+      color: green; }
+      .posts a.minus {
+        color: darkred; }
+  .posts .row-bordered {
+    border: 1px solid #eee;
+    border-bottom: 3px solid #eee;
+    border-radius: 5px; }
+    .posts .content {
+      padding: 0; }
+      .posts .content-data {
+        padding: 5px 15px; }
+        .posts .category {
+          border-radius: 3px; }
+          .posts .category.dev {
+            border-left: 5px solid rgba(76, 178, 178, 0.4); }
+            .posts .category.net {
+              border-left: 5px solid rgba(203, 204, 50, 0.4); }
+              .posts .category.sys {
+                border-left: 5px solid rgba(122, 101, 204, 0.4); }
+                .posts .category.mobile {
+                  border-left: 5px solid rgba(204, 81, 50, 0.4); }
+  .posts .score {
+    padding: 0 15px;
+    width: 100%; }
+    .posts .score .user-score {
+      font-size: 1.3em;
+      color: #555; }
+      .posts .score .user-score .top {
+        color: #555; }
+        .posts .score .user-score .rising {
+          color: #555; }
+    .posts .score a.vote {
+      font-size: 1.3em; }
+      .posts .score .anonymous-score {
+        font-size: 0.9em;
+        color: #777; }
+        .posts .score span {
+          padding-right: 10px; }
+  .posts .image {
+    font-size: 5em;
+    margin: 0 auto;
+    height: 90%;
+    padding: 21px;
+    text-align: center;
+    color: #eee; }
+    .posts .image img {
+      max-width: 100%;
+      max-height: 100px;
+      height: auto; }
+  .posts .meta {
+    font-size: 0.9em;
+    color: #777; }
+    .posts .post-url {
+      font-size: 1.2em; }
+      .posts .src-url {
+        color: #333; }
+        .posts.top-posts {
+          font-size: 0.9em; }
+          .posts.top-posts .row {
+            margin: 5px 0;
+            padding: 5px 5px;
+            border: 1px solid #eee; }
+            .posts.top-posts .image {
+              margin: 0 auto;
+              padding: 0;
+              width: 100%;
+              font-size: 1em; }
+              .posts.top-posts .image img {
+                top: 0;
+                max-width: 80px;
+                height: auto; }
+          .posts.top-posts .score {
+            font-size: 0.8em;
+            font-weight: normal;
+            padding: 0;
+            bottom: 0; }
+  .posts.post-details .title {
+    font-size: 1.5em; }
+    .posts.post-details .details {
+      border: 1px solid lime; }
+      .posts.post-details .image {
+        border: 1px solid lime;
+        margin: 0 auto;
+        height: 100%;
+        text-align: center; }
+        .posts.post-details .image img {
+          max-width: 100%;
+          height: auto; }
+  .posts.post-details .score {
+    padding: 0; }
+    .posts.post-details .description {
+      margin: 20px auto;
+      padding: 15px 0;
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee; }
+      .posts.post-details .image {
+        border: 0; }
+        .posts.post-details .image img {
+          max-width: 100%;
+          height: auto; }
+  .posts.post-comments {
+    padding: 10px;
+    border-radius: 3px;
+    font-size: 1em;
+    margin-top: 50px; }
+    .posts.post-comments .user-avatar {
+      font-size: 3em;
+      color: #f6f6f6; }
+      .posts.post-comments .user-avatar img {
+        top: 0;
+        max-width: 60px;
+        height: auto; }
+    .posts.post-comments .comment {
+      margin-bottom: 20px; }
+      .posts.post-comments .comment .meta {
+        padding: 0 10px;
+        background: bright-gray;
+        border-top: 1px solid #f6f6f6; }
+        .posts.post-comments .comment .meta ul {
+          margin: 0; }
+      .posts.post-comments .comment .actions {
+        padding: 0 10px;
+        background: #fff;
+        font-size: 0.85em;
+        border-bottom: 3px solid #f6f6f6; }
+        .posts.post-comments .comment .actions ul {
+          margin: 0; }
+      .posts.post-comments .comment .content {
+        background: #fff;
+        padding: 5px 15px;
+        text-align: justify; }
+        .posts.post-comments .comment .score {
+          color: #555; }
+    .posts.post-comments .comment-form {
+      padding: 10px; }
+      .posts.post-comments .comment-form:empty {
+        padding: 0; }
+    .posts.post-comments .comment-deleted {
+      color: #555;
+      font-style: italic; }

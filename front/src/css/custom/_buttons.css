@@ -1,0 +1,16 @@
+.btn {
+  border-radius: 0; }
+
+  .btn-custom {
+    border-radius: 0; }
+
+    .btn-small {
+      font-size: 0.9em; }
+
+      .btn-mini {
+        font-size: 0.8em; }
+
+        .btn-primary {
+          background-color: #0099ff; }
+          .btn-primary:hover {
+            background-color: #008ae6; }

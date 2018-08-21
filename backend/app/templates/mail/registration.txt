@@ -1,0 +1,12 @@
+Hi {{g.user.get_name()}}
+
+You have signed up for {{config.get("SITE_NAME")}}.
+Follow the link below to fully activate your profile.
+Please note that you need to be logged in to complete
+this action.
+
+
+{{config.get("SITE_BASE_URL")}}/confirmation/registration/{{confirmation_key}}
+
+
+If you did not sign up, ignore this message or contact us.

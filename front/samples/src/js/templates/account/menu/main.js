@@ -1,0 +1,11 @@
+define([], function() {function anonymous(it) {
+var encodeHTML = typeof _encodeHTML !== 'undefined' ? _encodeHTML : (function (doNotSkipEncoded) {
+		var encodeHTMLRules = { "&": "&#38;", "<": "&#60;", ">": "&#62;", '"': "&#34;", "'": "&#39;", "/": "&#47;" },
+			matchHTML = doNotSkipEncoded ? /[&<>"'\/]/g : /&(?!#?\w+;)|<|>|"|'|\//g;
+		return function(code) {
+			return code ? code.toString().replace(matchHTML, function(m) {return encodeHTMLRules[m] || m;}) : "";
+		};
+	}());var out='<div class="account-menu"> <ul class="list-unstyled menu"> <li class="group"> <div class="header">Profile</div> <ul class="list-unstyled items"><li> <a href="'+encodeHTML(it.helpers.route(':account:dashboard'))+'">Dashboard</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:profileSettings'))+'">Settings</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:profilePassword'))+'">Change password</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:profileData'))+'">My data</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:profileNotifications'))+'">Notifications</a></li> </ul> </li> <li class="group"> <div class="header">Content</div> <ul class="list-unstyled items"><li> <a href="'+encodeHTML(it.helpers.route(':account:contentPosts'))+'">Posts</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:contentComments'))+'">Comments</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:contentChannels'))+'">Channels</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:contentFavorite'))+'">Favorite</a></li> </ul> </li> <li class="group"> <div class="header">Subscriptions</div> <ul class="list-unstyled items"><li> <a href="'+encodeHTML(it.helpers.route(':account:subscriptionsChannels'))+'">Channels</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:subscriptionsUsers'))+'">Users</a></li> </ul> </li> <li class="group"> <div class="header">Blacklist</div> <ul class="list-unstyled items"><li> <a href="'+encodeHTML(it.helpers.route(':account:blacklistUsers'))+'">Users</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:blacklistCategories'))+'">Categories</a></li><li> <a href="'+encodeHTML(it.helpers.route(':account:blacklistTags'))+'">Tags</a></li> </ul> </li> </ul></div>';return out;
+}
+return anonymous;
+});

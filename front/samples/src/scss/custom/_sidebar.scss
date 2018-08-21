@@ -1,0 +1,146 @@
+@import "custom/vars";
+
+.layout-sidebar {
+    &.toggled {
+	.sidebar {
+	    width: 25px;
+
+	    .menu {
+		display: none;
+	    }
+	    
+	    .controls {
+		.link-hide {
+		    display: none;
+		}
+		.link-show {
+		    display: block;
+		}
+	    }
+	}
+
+	.main-view {
+	    width: 100%;
+	    margin-right: 10px;
+	    margin-left: 0;
+	}
+    }
+
+    .sidebar {
+	width: $sidebar-width;
+	padding-top: 10px;
+	position: fixed;
+	left: 0;
+	background: $sidebar-bg;
+	height: 100%;
+
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+
+	border-right: 2px solid #eee;
+
+	.controls {
+	    text-align: right;
+	    padding: 0px 5px;
+	    a {
+		color: #aaa;
+		font-weight: normal;
+		font-size: 1em;
+
+		&:hover {
+		    color: $default-sitemark-color;
+		}
+	    }
+	    .link-hide {
+		display: block;
+	    }
+	    .link-show {
+		display: none;
+	    }
+	}
+
+	.menu {
+	    padding-left: 10px;
+	}
+
+	li {
+	    &.group {
+		margin-top: 10px;
+		.header {
+		    color: #666;
+		    font-weight: bold;
+		    padding: 0px 5px;
+		}
+	    }
+
+	    .items {
+		padding-left: 10px;
+		li {
+		    a {
+			color: $sidebar-menu-item-fg;
+		    }
+		}
+	    }
+	}
+    }
+
+    .main-view {
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+	margin-right: 10px;
+	margin-left: $sidebar-width;
+	padding: 0px;
+    }
+}
+
+@media(max-width:768px) {
+    .layout-sidebar {
+	&.toggled {
+	    .sidebar {
+		width: $sidebar-width;
+		.menu {
+		    display: block;
+		}
+		.controls {
+		    .link-hide {
+			display: block;
+		    }
+		    .link-show {
+			display: none;
+		    }
+		}
+	    }
+
+	    .main-view {
+		margin-left: $sidebar-width;
+		padding: 0px;
+		margin-right: 10px;
+	    }
+	}
+
+	.sidebar {
+	    width: 25px;
+	    .menu {
+		display: none;
+	    }
+
+	    .controls {
+		.link-hide {
+		    display: none;
+		}
+		.link-show {
+		    display: block;
+		}
+	    }
+	}
+
+	.main-view {
+	    margin-left: 30px;
+	    margin-right: 10px;
+	}
+    }
+}
